@@ -41,14 +41,14 @@ owner:
   disqus-shortname:
   twitter: #username
   facebook: #username
-  google:
+  google: ddw0127
     plus: #username
     analytics:
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github:
+  github: ddw0127
   gitlab: #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
