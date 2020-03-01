@@ -1,3 +1,5 @@
+
+<!--
 ---
 layout: post
 title: Sample Post
@@ -9,6 +11,7 @@ image:
   credit: thomas shellberg
   creditlink: https://unsplash.com/photos/Ki0dpxd3LGc
 ---
+-->
 
 ## HTML Elements
 
