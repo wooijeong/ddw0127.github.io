@@ -1,71 +1,98 @@
-# Update 07/09/2018
+---
+layout: post
+title: Sample Post
+excerpt: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+categories: [hello world]
+comments: true
+image:
+  feature: https://images.unsplash.com/photo-1440635592348-167b1b30296f?crop=entropy&dpr=2&fit=crop&fm=jpg&h=475&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1250
+  credit: thomas shellberg
+  creditlink: https://unsplash.com/photos/Ki0dpxd3LGc
+---
 
-I'm planning to refactor Leonids theme!!!
+## HTML Elements
 
-The goal is really simple: make documentation more intuitive and deployment simpler!!!
+Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
 
-Here is the plan:
+# Heading 1
 
-| Version | Description | Date |
-| --- | --- | --- |
-| 1.1 | Jekyll version deployable with gem | 07/15/2018 |
-| 1.2 | New features: Pagination, Prev/Next post | 07/22/2018 |
-| 2.0 | Gatsby or Vuepress version (vote in Issues) | who knows... |
+## Heading 2
 
-As the project was and will be designed to improve your writing experience, only documentation, gem, deployment process with CI relevant PRs are acceptable in the future.
+### Heading 3
 
-I want you to know how much I value your support.
+#### Heading 4
 
-Share it to your timeline!
+##### Heading 5
 
-# Update 05/06/2016
+###### Heading 6
 
-Important! It's better to download the gzipped files instead of forking the repo. I would really appreciate if you could give me a star. 😁
+### Body text
 
-This project is under MIT license, so feel free to make it your own.
+Lorem ipsum dolor sit amet, test link adipiscing elit. **This is strong**. Nullam dignissim convallis est. Quisque aliquam.
 
-# Leonids Jekyll Themes
+![Smithsonian Image](https://images.unsplash.com/photo-1440635592348-167b1b30296f?crop=entropy&dpr=2&fit=crop&fm=jpg&h=475&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1250)
 
-**[Leonids](http://renyuanz.github.io/leonids)** is a clean Jekyll theme perfect for powering your GitHub hosted blog.
+*This is emphasized*. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H2O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times (That’s a citation). Underline.Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
 
-## What is Leonids?
+HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Simple and clear permalink structure.
-* Support for Disqus Comments.
-* Support for multi-authors.
-* **And** the Leonids (/ˈliːənɪdz/ lee-ə-nidz) are a prolific meteor shower associated with the comet [Tempel-Tuttle](https://en.wikipedia.org/wiki/55P/Tempel%E2%80%93Tuttle).
+### Blockquotes
 
-See a [demo](http://renyuanz.github.io/leonids/) hosted on GitHub.
+> Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.
 
-## Quick setup
+## List Types
 
-```
-git clone https://github.com/renyuanz/leonids
-cd leonids
-jekyll server
-```
+### Ordered Lists
 
-Check out your awesome blog at `http://localhost:4000` and Cheers!
+1. Item one
+   1. sub item one
+   2. sub item two
+   3. sub item three
+2. Item two
 
-## Running with Docker
+### Unordered Lists
 
-```
-docker run --rm -it --volume=$PWD:/srv/jekyll -p 4000:4000 jekyll/jekyll:pages jekyll serve --watch --force_polling
-```
+* Item one
+* Item two
+* Item three
 
-## Resume Page by [@Skn0tt](https://github.com/Skn0tt)
-Leonids features a simple resume page. It is divided up into five sections:
+## Tables
 
-* Bio (Edit \_data/index/careers.yml)
-* Education (Edit \_data/index/education.yml)
-* Skills (Edit \_data/index/skills.yml)
-* Projects (Edit \_data/index/projects.yml)
-* About (Edit \_includes/sections/about.html)
+| Header 1 | Header 2 | Header 3 |
+|:--------|:-------:|--------:|
+| cell 1   | cell 2   | cell 3   |
+| cell 4   | cell 5   | cell 6   |
+|----
+| cell 1   | cell 2   | cell 3   |
+| cell 4   | cell 5   | cell 6   |
+|=====
+| Foot 1   | Foot 2   | Foot 3   |
 
-You can put all your info into these files, and they will be featured on the resume page.
+## Code Snippets
 
-## TODO
+{% highlight css %}
+#container {
+  float: left;
+  margin: 0 -240px 0 0;
+  width: 100%;
+}
+{% endhighlight %}
 
-- [ ] Redesign categories page. Ref: [dribbble: blog category section By Ilja Miskov](https://dribbble.com/shots/2274792-Blog-Category-Selection)
-- [ ] Multi languages support.
+## Buttons
+
+Make any link standout more when applying the `.btn` class.
+
+{% highlight html %}
+<a href="#" class="btn btn-success">Success Button</a>
+{% endhighlight %}
+
+<div markdown="0"><a href="#" class="btn">Primary Button</a></div>
+<div markdown="0"><a href="#" class="btn btn-success">Success Button</a></div>
+<div markdown="0"><a href="#" class="btn btn-warning">Warning Button</a></div>
+<div markdown="0"><a href="#" class="btn btn-danger">Danger Button</a></div>
+<div markdown="0"><a href="#" class="btn btn-info">Info Button</a></div>
+
+## Notices
+
+**Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
+{: .notice}
